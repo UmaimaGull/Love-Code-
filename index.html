@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode My Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 50px;
+        }
+        h1 {
+            color: #FF69B4;
+        }
+        .binary-message {
+            font-size: 24px;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            margin-top: 20px;
+        }
+        .input-area {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+        }
+        .input-field {
+            padding: 10px;
+            font-size: 18px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #FF1493;
+        }
+        .result {
+            font-size: 28px;
+            font-weight: bold;
+            color: #32CD32;
+            margin-top: 30px;
+        }
+        .description {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Decoding My Love for You</h1>
+
+    <!-- Extended Description Section -->
+    <p class="description">
+        "To the One Who Holds My Heart,<br>
+        From the very moment you came to my life, something deep inside me changed. Every moment with you feels like a gift, a precious moment I want to hold onto ... You’ve made my world brighter, more meaningful and filled with so much love.<br>
+        Words sometimes fail to express what I feel for you... That’s why, today, I’ve decided to share my heart with you in your language .. lol .. —through a puzzle only you can solve.<br>
+        The message you’re about to decode is a simple one, but it holds the key to my heart. It’s a message that speaks of my deepest emotions, those that go beyond words, beyond actions and beyond time.<br>
+        Just like the binary code you’re about to uncover, my love for you is something you can only truly understand. It’s not just a code, it’s my feelings for you, wrapped up in a way that you and only you, can decode.<br>
+        Each day, my love for you grows and as we continue this journey together, I know my feelings for you will always remain the same—endlessly true and unwavering.<br>
+        I want you to know that every little thing you do, every moment we share, fills my heart with a love that can’t be put into words. And now, with this little secret, I’m sending you a piece of my heart, hoping you’ll uncover just how deeply I care."
+    </p>
+
+    <!-- Binary Code Section -->
+    <p class="binary-message">01001001 00100000 01101100 01101111 01110110 01100101 00100000 01111001 01101111 01110101</p>
+
+    <!-- Input Area for Binary -->
+    <div class="input-area">
+        <label for="binary-input">Enter the binary code: </label>
+        <input type="text" id="binary-input" class="input-field" placeholder="Enter binary here...">
+    </div>
+
+    <button class="submit-button" onclick="checkBinary()">Submit</button>
+
+    <p id="result" class="result"></p>
+
+    <script>
+        const correctBinary = "01001001 00100000 01101100 01101111 01110110 01100101 00100000 01111001 01101111 01110101";
+
+        function checkBinary() {
+            const userInput = document.getElementById("binary-input").value.trim();
+            if (userInput === correctBinary) {
+                document.getElementById("result").textContent = "I LOVE YOU 💖";
+            } else {
+                document.getElementById("result").textContent = "Oops! Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
